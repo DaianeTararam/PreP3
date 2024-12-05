@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7ECFA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvInstrucao"
+        android:layout_width="233dp"
+        android:layout_height="25dp"
+        android:hint="@string/tvInstrucao"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etNumeros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="59dp"
+        android:hint="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvInstrucao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/tvResposta"
+        android:layout_width="235dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnDescobrir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeros" />
+
+    <Button
+        android:id="@+id/btnDescobrir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:hint="@string/btnDescobrir"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResposta" />
+
+    <EditText
+        android:id="@+id/etNumeros"
+        android:layout_width="233dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="@string/etNumeros"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvResposta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInstrucao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

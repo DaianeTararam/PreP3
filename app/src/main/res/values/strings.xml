@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Maior e Menor</string>
+    <string name="etNumeros">Digite aqui</string>
+    <string name="tvInstrucao">Digite 20 números positivos abaixo</string>
+    <string name="tvMaior">Maior número: </string>
+    <string name="tvMenor">Menor número: </string>
+    <string name="btnDescobrir">Descobrir</string>
+    <string name="erro">Há números negativos, tente novamente!</string>
+</resources>
